@@ -28,4 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Personnal add
 
-Test Git
+Une fois le projet cloné, lancer la commande (dans le dossier racine du projet) : npm install
+Pour ajouter le dossier "node_modules" et ses fichiers.
