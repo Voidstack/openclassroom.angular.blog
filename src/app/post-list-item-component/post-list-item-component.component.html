@@ -1,0 +1,20 @@
+<li [ngClass]="{
+ 'list-group-item': true,
+ 'list-group-item-success':loveIts > '0',
+ 'list-group-item-secondary':loveIts == '0',
+ 'list-group-item-danger':loveIts < '0'}">
+
+<!-- <div style="width: 20px; height: 20px; background-color: red;"
+ *ngIf="loveIts < 0"></div>
+  <div style="width: 20px; height: 20px; background-color: grey;"
+ *ngIf="loveIts == 0"></div>
+ <div style="width: 20px; height: 20px; background-color: green;"
+ *ngIf="loveIts > 0"></div> -->
+ <h4>{{ title }}</h4>
+ <p style="position: absolute; top: 0px; right: 0px; color: grey; margin-right: 5px">{{ created_at | date:'dd/MM/yyyy, hh:mm aa' }}</p>
+ <p style="padding-bottom: 10px">{{ content }}</p>
+ <p> {{loveIts}}</p>
+<button (click)="addLove()" type="button" class="btn btn-success" style="margin-right: 10px" >Love it!</button>
+<button (click)="addDLove()" type="button" class="btn btn-danger" >Don't love it!</button>
+</li>
+
